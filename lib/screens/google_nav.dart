@@ -61,7 +61,7 @@ class _GoogleNavState extends State<GoogleNav> {
                   icon: Icons.account_box_rounded,
                 ),
                 GButton(
-                  icon: Icons.add_circle_outline_rounded,
+                  icon: Icons.add_circle_rounded,
                 ),
                 GButton(
                   icon: Icons.notifications,
