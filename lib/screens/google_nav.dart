@@ -58,16 +58,16 @@ class _GoogleNavState extends State<GoogleNav> {
                   icon: Icons.home_rounded,
                 ),
                 GButton(
-                  icon: Icons.photo_library,
+                  icon: Icons.account_box_rounded,
                 ),
                 GButton(
-                  icon: Icons.my_library_add,
+                  icon: Icons.add_circle_outline_rounded,
                 ),
                 GButton(
-                  icon: Icons.qr_code,
+                  icon: Icons.notifications,
                 ),
                 GButton(
-                  icon: Icons.people_outline_rounded,
+                  icon: Icons.settings_rounded,
                 ),
               ],
               selectedIndex: _selectedIndex,
