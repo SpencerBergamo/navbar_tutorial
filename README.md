@@ -1,10 +1,10 @@
 # navbar_tutorial
 
-A new Flutter project.
+Google Bottom Navbar and Appbar implementation. Great starting point for anyone looking for a 'floating Google navbar'. Feel free to contribute to UI, error handling, or features. 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
+## pubspec.yaml 
+  google_nav_bar:
+  font_awesome_flutter:
 
 A few resources to get you started if this is your first Flutter project:
 
