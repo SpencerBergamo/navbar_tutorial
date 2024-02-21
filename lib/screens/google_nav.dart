@@ -17,11 +17,26 @@ class _GoogleNavState extends State<GoogleNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
+      drawer: Drawer(
+        child: ListView(
+          children: const [
+            Text('Item 1'),
+            Text('Item 2'),
+            Text('Item 3'),
+          ],
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.grey[200],
-        leading: IconButton(
-          icon: const Icon(Icons.menu, size: 25),
-          onPressed: () {},
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              icon: const Icon(Icons.person, size: 25),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
         ),
         actions: [
           IconButton(
