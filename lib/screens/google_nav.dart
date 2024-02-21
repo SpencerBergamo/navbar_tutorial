@@ -11,6 +11,7 @@ class GoogleNav extends StatefulWidget {
 class _GoogleNavState extends State<GoogleNav> {
   // initial selectedState value
   int _selectedIndex = 0;
+  final _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,15 @@ class _GoogleNavState extends State<GoogleNav> {
           ),
         ],
       ),
-      body: _widgetOptions.elementAt(_selectedIndex),
+      body: PageView(
+          controller: _pageController,
+          // children: [_widgetOptions.elementAt(_selectedIndex)],
+          children: _widgetOptions,
+          onPageChanged: (index) {
+            setState(() {
+              _selectedIndex = index;
+            });
+          }),
       bottomNavigationBar: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -73,7 +82,7 @@ class _GoogleNavState extends State<GoogleNav> {
               selectedIndex: _selectedIndex,
               onTabChange: (index) {
                 setState(() {
-                  _selectedIndex = index;
+                  _pageController.jumpToPage(index);
                 });
               },
             ),
