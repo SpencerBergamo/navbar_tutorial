@@ -2,6 +2,8 @@
 
 Google Bottom Navbar and Appbar implementation. Great starting point for anyone looking for a 'floating Google navbar'. Feel free to contribute to UI, error handling, or features. 
 
+![7678CE96-390D-4183-87CD-8D820ABAA89A_4_5005_c](https://github.com/SpencerBergamo/navbar_tutorial/assets/86145830/7a57ed43-f165-4e32-b210-e3a184a2b2fa)
+
 ## pubspec.yaml 
   google_nav_bar:
   font_awesome_flutter:
