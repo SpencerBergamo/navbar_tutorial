@@ -79,7 +79,7 @@ class _GoogleNavState extends State<GoogleNav> {
               tabMargin: EdgeInsets.zero,
               tabs: const [
                 GButton(
-                  icon: Icons.home_rounded,
+                  icon: Icons.home_filled,
                 ),
                 GButton(
                   icon: Icons.account_box_rounded,
@@ -108,7 +108,7 @@ class _GoogleNavState extends State<GoogleNav> {
   }
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Center(child: Text('Home')),
+    Center(child: Text("Home")),
     Center(child: Text('Photos')),
     Center(child: Text('Add')),
     Center(child: Text('QR')),
